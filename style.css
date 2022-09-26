@@ -103,5 +103,13 @@
     .navbar-email {
       display: none;
     }
+    .main-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .section1 textarea, .section2 textarea{
+      width: 320px;
+      height: 320px;
+    }
   }
   
