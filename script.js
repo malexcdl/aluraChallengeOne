@@ -1,20 +1,13 @@
 const inputTexto = document.querySelector(".input-texto");
 const mensaje = document.querySelector(".mensaje");
 
-// La letra "e" es convertida para "enter"
-// La letra "i" es convertida para "imes"
-// La letra "a" es convertida para "ai"
-// La letra "o" es convertida para "ober"
-// La letra "u" es convertida para "ufat"
-
-function btnEncriptar() {
+function botonEncriptar() {
   const textoEncriptado = encriptar(inputTexto.value);
   mensaje.value = textoEncriptado;
-  mensaje.style.backgroundImage = "none";
   inputTexto.value = "";
 }
 
-function btnDesencriptar() {
+function botonDesencriptar() {
   const textoDesencriptado = desencriptar(inputTexto.value);
   mensaje.value = textoDesencriptado;
   mensaje.style.backgroundImage = "none";
@@ -67,5 +60,5 @@ function copiar() {
   mensaje.select();
   navigator.clipboard.writeText(mensaje.value);
   mensaje.value = "";
-  alert("Texto copiado");
+  alert("El texto se ha copiado");
 }
