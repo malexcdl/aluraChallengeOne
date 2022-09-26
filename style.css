@@ -82,6 +82,20 @@
     width: 100%;
     height: 100%;
   }
+
+  .boton{
+    background-color: var(--white);
+    color: var(--light-gray);
+    border: 1px solid var(--white);
+    padding: 10px;
+    margin: 4px;
+    border-radius: 8px;
+  }
+
+  .boton:hover{
+    border: 1px solid var(--light-smooth-blue);
+    color: var(--light-smooth-blue);
+  }
   @media (max-width: 640px) {
     .navbar-izq ul {
       display: none;
